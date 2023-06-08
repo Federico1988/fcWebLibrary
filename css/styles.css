@@ -314,7 +314,7 @@ footer p {
     }
 
     .fotosPersonas {
-        align-items: center;
+        justify-content: center;
     }
 
     .fotosPersonas img {
