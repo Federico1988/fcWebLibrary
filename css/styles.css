@@ -29,7 +29,7 @@ body {
 }
 
 header ul {
-    width: 100vw;
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -113,6 +113,13 @@ h2 {
     text-align: justify;
     font-size: xx-large;
 }
+
+.fotosPersonas img {
+    margin: 10px;
+    width: 400px;
+}
+
+
 
 .fotosLugares {
     padding: 20px;
@@ -224,9 +231,9 @@ h2 {
     transform: scale(1.2);
 }
 
-.fotosDiv img {
+/* .fotosDiv img {
     margin: 20px;
-}
+} */
 
 form {
     margin: 50px;
@@ -304,6 +311,16 @@ footer p {
             "foto6"
             "foto7"
             "foto8";
+    }
+
+    .fotosPersonas {
+        align-items: center;
+    }
+
+    .fotosPersonas img {
+        width: 250px;
+        margin: 2px;
+        align-self: center;
     }
 
 }
