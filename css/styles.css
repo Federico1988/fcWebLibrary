@@ -28,12 +28,10 @@ body {
     background-color: var(--paynes-gray);
 }
 
-/* header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-} */
+header ul {
+    width: 100vw;
+    justify-content: space-around;
+}
 
 .fondoHeader {
     background-image: url("../imgs/keyboardBkgnd.jpg");
@@ -54,7 +52,7 @@ a {
     text-align: center;
     text-decoration: none;
     padding: 10px;
-} 
+}
 
 header a:hover {
     background-color: var(--chocolate-cosmos);
