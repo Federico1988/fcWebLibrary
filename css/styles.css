@@ -28,7 +28,7 @@ body {
     background-color: var(--paynes-gray);
 }
 
-header ul {
+.headerStyle {
     width: 100vw;
     justify-content: space-around;
 }
