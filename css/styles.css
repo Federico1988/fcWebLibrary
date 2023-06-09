@@ -79,11 +79,15 @@ section {
 
 .floatingVideo {
     position: fixed;
-    top: 120px;
-    right: 20px;
+    width: 727px;
+    height: 409px;
+    bottom: 20px;
+    left: 20px;
     border-radius: 30px;
 
 }
+
+
 
 .formSection {
     text-align: left;
@@ -99,26 +103,26 @@ section {
     margin: 10px;
 }
 
-h2 {
 
-    font-weight: 400;
-    font-size: 3rem;
-}
-
-.articleFromFotos {
-    padding: 50px;
-}
-
-.articleFromFotos p {
+p {
     text-align: justify;
     font-size: xx-large;
 }
 
+@media screen and (max-width:500px) {
+    p{
+        text-align: left;
+        font-size: medium;
+    }
+    
+}
+
+
 .fotosPersonas img {
     margin: 10px;
     width: 400px;
+    vertical-align: baseline;
 }
-
 
 
 .fotosLugares {
@@ -262,6 +266,10 @@ textarea {
     text-align: right;
 }
 
+.contentCenter {
+    text-align: center;
+}
+
 .classlist {
     margin-left: 30px;
     margin-bottom: 30px;
@@ -273,8 +281,8 @@ footer {
 }
 
 footer img {
-    max-width: 50px;
-    max-height: 50px;
+    width: 50px;
+    height: 50px;
     margin-right: 3%;
     margin-top: 20px;
 }
@@ -323,4 +331,18 @@ footer p {
         align-self: center;
     }
 
+    footer{
+        display:flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+}
+
+
+@media screen and (min-width:500px) {
+    
+    footer{
+        text-align: right;
+    }
 }
