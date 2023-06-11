@@ -305,6 +305,9 @@ footer p {
     flex-wrap: wrap;
 }
 
+p{
+    font-size: medium;
+}
 @media screen and (max-width:500px) {
     h1 {
         font-size: large;
@@ -375,6 +378,9 @@ footer p {
         display: inline;
     }
 
+    p{
+        font-size: smaller;
+    }
 
 }
 
@@ -383,6 +389,10 @@ footer p {
     .spotifyIframe {
         height: 352px;
         width: 30%;
+    }
+
+    p{
+        font-size: small;
     }
     
 }
