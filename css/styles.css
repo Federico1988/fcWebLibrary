@@ -302,6 +302,14 @@ footer p {
 
 
 @media screen and (max-width:500px) {
+    h1 {
+        font-size: large;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
     .fotosLugares {
         /* Para celu (max 500px) acomodo las fotos en una sola columna */
         grid-template-columns: 1fr;
@@ -336,6 +344,15 @@ footer p {
     .spotifyIframe {
         height: 152px;
         width: 100%;
+    }
+
+    .classlist {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        font-size: small;
     }
 
 
