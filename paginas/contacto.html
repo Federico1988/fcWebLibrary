@@ -49,19 +49,19 @@
         </nav>
     </header>
     <main>
-        <section class="formSection">
+        <div class="formSection container-fluid">
             <h1>CONTACTO</h1>
             <form action="">
-                <div>
-                    <label class="formLabel" for="name">Ingresá tu nombre:</label>
+                <label class="formLabel" for="name">Ingresá tu nombre:</label>
+                <div class="input-group">
                     <input type="text" name="name" id="name">
                 </div>
-                <div>
-                    <label class="formLabel" for="email">Ingresá tu email:</label>
+                <label class="formLabel" for="email">Ingresá tu email:</label>
+                <div class="input-group">
                     <input type="email" placeholder="email@domain.com" required name="email" id="email">
                 </div>
-                <div>
-                    <label class="formLabel" for="comments">Dejame tus comentarios:</label>
+                <label class="formLabel" for="comments">Dejame tus comentarios:</label>
+                <div class="input-group">
                     <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
                 </div>
                 <div class="contentRight">
@@ -70,8 +70,7 @@
                     <input type="submit" value="Enviar formulario">
                 </div>
             </form>
-
-        </section>
+        </div>
 
     </main>
 
