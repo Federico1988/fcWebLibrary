@@ -98,12 +98,6 @@ section {
 }
 
 
-.spotifyEmbedded iframe {
-    width: 20%;
-    margin: 10px;
-}
-
-
 p {
     text-align: justify;
     font-size: xx-large;
@@ -299,10 +293,13 @@ footer p {
 
 .spotifyIframe {
     border-radius: 12px;
-    width: "20%";
-    height: "352";
+    width: 20%;
+    height: 352px;
+    margin: 10px;
     box-shadow: 0 5px 20px var(--caramel);
 }
+
+
 
 @media screen and (max-width:500px) {
     .fotosLugares {
@@ -330,6 +327,18 @@ footer p {
         margin: 2px;
         align-self: center;
     }
+
+    .soptifyListItems {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spotifyIframe {
+        height: 152px;
+        width: 100%;
+    }
+
+
 
     footer {
         display: flex;
