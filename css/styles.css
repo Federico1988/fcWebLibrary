@@ -299,7 +299,11 @@ footer p {
     box-shadow: 0 5px 20px var(--caramel);
 }
 
-
+.soptifyListItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 @media screen and (max-width:500px) {
     h1 {
@@ -374,13 +378,10 @@ footer p {
 
 }
 
-@media screen and (min-width:768) {
-    .soptifyListItems {
-        display: flex;
-        flex-direction: row
-    }
+@media screen and (min-width:768px) and (max-width:1024px) {
+
     .spotifyIframe {
-        height: 130px;
+        height: 352px;
         width: 30%;
     }
     
