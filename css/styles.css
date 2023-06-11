@@ -355,8 +355,6 @@ footer p {
         font-size: small;
     }
 
-
-
     footer {
         display: flex;
         text-align: center;
@@ -374,6 +372,18 @@ footer p {
     }
 
 
+}
+
+@media screen and (min-width:768) {
+    .soptifyListItems {
+        display: flex;
+        flex-direction: row
+    }
+    .spotifyIframe {
+        height: 130px;
+        width: 30%;
+    }
+    
 }
 
 
