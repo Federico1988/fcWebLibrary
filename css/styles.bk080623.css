@@ -28,8 +28,8 @@ body {
     background-color: var(--paynes-gray);
 }
 
-.headerStyle {
-    width: 100vw;
+header ul {
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -79,11 +79,15 @@ section {
 
 .floatingVideo {
     position: fixed;
-    top: 120px;
-    right: 20px;
+    width: 727px;
+    height: 409px;
+    bottom: 20px;
+    left: 20px;
     border-radius: 30px;
 
 }
+
+
 
 .formSection {
     text-align: left;
@@ -94,25 +98,26 @@ section {
 }
 
 
-.spotifyEmbedded iframe {
-    width: 20%;
-    margin: 10px;
-}
-
-h2 {
-
-    font-weight: 400;
-    font-size: 3rem;
-}
-
-.articleFromFotos {
-    padding: 50px;
-}
-
-.articleFromFotos p {
+p {
     text-align: justify;
     font-size: xx-large;
 }
+
+@media screen and (max-width:500px) {
+    p {
+        text-align: left;
+        font-size: medium;
+    }
+
+}
+
+
+.fotosPersonas img {
+    margin: 10px;
+    width: 400px;
+    vertical-align: baseline;
+}
+
 
 .fotosLugares {
     padding: 20px;
@@ -224,9 +229,9 @@ h2 {
     transform: scale(1.2);
 }
 
-.fotosDiv img {
+/* .fotosDiv img {
     margin: 20px;
-}
+} */
 
 form {
     margin: 50px;
@@ -255,6 +260,10 @@ textarea {
     text-align: right;
 }
 
+.contentCenter {
+    text-align: center;
+}
+
 .classlist {
     margin-left: 30px;
     margin-bottom: 30px;
@@ -262,12 +271,12 @@ textarea {
 }
 
 footer {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 footer img {
-    max-width: 50px;
-    max-height: 50px;
+    width: 50px;
+    height: 50px;
     margin-right: 3%;
     margin-top: 20px;
 }
@@ -284,12 +293,30 @@ footer p {
 
 .spotifyIframe {
     border-radius: 12px;
-    width: "20%";
-    height: "352";
+    width: 20%;
+    height: 352px;
+    margin: 10px;
     box-shadow: 0 5px 20px var(--caramel);
 }
 
+.soptifyListItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+p{
+    font-size: medium;
+}
 @media screen and (max-width:500px) {
+    h1 {
+        font-size: large;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
     .fotosLugares {
         /* Para celu (max 500px) acomodo las fotos en una sola columna */
         grid-template-columns: 1fr;
@@ -306,4 +333,74 @@ footer p {
             "foto8";
     }
 
+    .fotosPersonas {
+        justify-content: center;
+    }
+
+    .fotosPersonas img {
+        width: 250px;
+        margin: 2px;
+        align-self: center;
+    }
+
+    .soptifyListItems {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spotifyIframe {
+        height: 152px;
+        width: 100%;
+    }
+
+    .classlist {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        font-size: small;
+    }
+
+    footer {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer p {
+        height: 40px;
+        display: inline;
+    }
+
+    p{
+        font-size: smaller;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    .spotifyIframe {
+        height: 352px;
+        width: 30%;
+    }
+
+    p{
+        font-size: small;
+    }
+    
+}
+
+
+@media screen and (min-width:500px) {
+
+    footer {
+        text-align: right;
+    }
 }

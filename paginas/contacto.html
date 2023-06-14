@@ -24,6 +24,7 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,600&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header class="fondoHeader">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -37,39 +38,41 @@
                         <li class="nav-item"><a class="nav-link headerLinks" href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link headerLinks" href="acercaDe.html">Acerca De</a></li>
                         <li class="nav-item"><a class="nav-link headerLinks" href="galeria.html">Galería</a></li>
-                        <li class="nav-item"><a class="nav-link headerLinks" href="misInfluencias.html">Mis Influencias</a></li>
-                        <li class="nav-item active"><a class="nav-link headerLinks" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link headerLinks" href="misInfluencias.html">Mis
+                                Influencias</a></li>
+                        <li class="nav-item active"><a class="nav-link headerLinks" href="contacto.html">Contacto</a>
+                        </li>
                         <li class="nav-item"><input type="search" placeholder="Buscar.."></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-    <section class="formSection">
-        <h1>CONTACTO</h1>
-        <form action="">
-            <div>
+    <main>
+        <div class="formSection container-fluid">
+            <h1>CONTACTO</h1>
+            <form action="">
                 <label class="formLabel" for="name">Ingresá tu nombre:</label>
-                <input type="text" name="name" id="name">
-            </div>
-            <div>
+                <div class="input-group">
+                    <input type="text" name="name" id="name">
+                </div>
                 <label class="formLabel" for="email">Ingresá tu email:</label>
-                <input type="email" placeholder="email@domain.com" required name="email" id="email">
-            </div>
-            <div>
+                <div class="input-group">
+                    <input type="email" placeholder="email@domain.com" required name="email" id="email">
+                </div>
                 <label class="formLabel" for="comments">Dejame tus comentarios:</label>
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-            </div>
-            <div class="contentRight">
-                <!-- Botones -->
-                <input type="reset" value="Resetear">
-                <input type="submit" value="Enviar formulario">
-            </div>
-        </form>
+                <div class="input-group">
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+                <div class="contentRight">
+                    <!-- Botones -->
+                    <input type="reset" value="Resetear">
+                    <input type="submit" value="Enviar formulario">
+                </div>
+            </form>
+        </div>
 
-    </section>
-
+    </main>
 
     <footer class="contentRight headerFooterColor">
         <p><a href="https://www.facebook.com/"><img src="../imgs/socialNetworks/facebook.png"></a></p>
@@ -81,4 +84,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+
 </html>
