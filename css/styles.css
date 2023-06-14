@@ -147,7 +147,7 @@ p {
   .fotosPersonas {
     justify-content: center;
   }
-  .fotosPersonas immg {
+  .fotosPersonas img {
     width: 250px;
     margin: 2px;
     align-self: center;
