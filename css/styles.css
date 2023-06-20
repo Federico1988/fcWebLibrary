@@ -51,7 +51,6 @@ header a:hover {
   background-color: var(--chocolate-cosmos);
 }
 header input[type=search] {
-  /* padding: 6px; */
   border: none;
   font-size: larger;
   font-weight: 500;
@@ -124,24 +123,32 @@ section {
   margin: 10px;
 }
 
-h2 {
-  /* 
-  font-weight: 400;
-  font-size: 3rem; */
-}
 @media screen and (max-width: 500px) {
   h2 {
     font-size: medium;
   }
 }
 
-/* .articleFromFotos {
-    padding: 50px;
-
-} */
 p {
   text-align: justify;
   font-size: xx-large;
+}
+
+.fotosPersonas img {
+  margin: 10px;
+  width: 400px;
+  vertical-align: baseline;
+  display: inline-block;
+}
+@media screen and (max-width: 500px) {
+  .fotosPersonas {
+    justify-content: center;
+  }
+  .fotosPersonas img {
+    width: 250px;
+    margin: 2px;
+    align-self: center;
+  }
 }
 
 .fotosLugares {
@@ -155,27 +162,11 @@ p {
 }
 @media screen and (max-width: 500px) {
   .fotosLugares {
-    /* Para celu (max 500px) acomodo las fotos en una sola columna */
+    /* Para mobile (max 500px) acomodo las fotos en una sola columna */
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 200px);
     grid-gap: 10px;
     grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8";
-  }
-}
-
-.fotosPersonas img {
-  margin: 10px;
-  width: 400px;
-  vertical-align: baseline;
-}
-@media screen and (max-width: 500px) {
-  .fotosPersonas {
-    justify-content: center;
-  }
-  .fotosPersonas img {
-    width: 250px;
-    margin: 2px;
-    align-self: center;
   }
 }
 
@@ -184,17 +175,11 @@ p {
   background-size: cover;
   transition: all 0.3s;
 }
-.paisaje1:hover {
-  transform: scale(1.2);
-}
 
 .paisaje2 {
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.3s;
-}
-.paisaje2:hover {
-  transform: scale(1.2);
 }
 
 .paisaje3 {
@@ -202,17 +187,11 @@ p {
   background-size: cover;
   transition: all 0.3s;
 }
-.paisaje3:hover {
-  transform: scale(1.2);
-}
 
 .paisaje4 {
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.3s;
-}
-.paisaje4:hover {
-  transform: scale(1.2);
 }
 
 .paisaje5 {
@@ -220,17 +199,11 @@ p {
   background-size: cover;
   transition: all 0.3s;
 }
-.paisaje5:hover {
-  transform: scale(1.2);
-}
 
 .paisaje6 {
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.3s;
-}
-.paisaje6:hover {
-  transform: scale(1.2);
 }
 
 .paisaje7 {
@@ -238,17 +211,11 @@ p {
   background-size: cover;
   transition: all 0.3s;
 }
-.paisaje7:hover {
-  transform: scale(1.2);
-}
 
 .paisaje8 {
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.3s;
-}
-.paisaje8:hover {
-  transform: scale(1.2);
 }
 
 .paisaje1 {
