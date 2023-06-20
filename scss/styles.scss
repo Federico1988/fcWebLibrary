@@ -18,6 +18,14 @@ html {
     font-size: 100%;
 }
 
+@mixin alignLeft {
+    text-align: left;
+}
+
+@mixin justifyText {
+    text-align: justify;
+}
+
 a {
 
     font-size: 2rem;
@@ -82,10 +90,6 @@ header {
     }
 }
 
-section {
-    padding: 20px;
-}
-
 .floatingVideo {
     position: fixed;
     width: 727px;
@@ -113,12 +117,9 @@ section {
     }
 }
 
-.formSection {
-    text-align: left;
-}
 
-.justifyText {
-    text-align: justify;
+.formDiv {
+    @include alignLeft;
 }
 
 
@@ -135,7 +136,7 @@ h2 {
 
 
 p {
-    text-align: justify;
+    @include justifyText;
     font-size: xx-large;
 }
 

@@ -77,10 +77,6 @@ header input[type=search] {
   }
 }
 
-section {
-  padding: 20px;
-}
-
 .floatingVideo {
   position: fixed;
   width: 727px;
@@ -110,12 +106,8 @@ section {
   }
 }
 
-.formSection {
+.formDiv {
   text-align: left;
-}
-
-.justifyText {
-  text-align: justify;
 }
 
 .spotifyEmbedded iframe {
