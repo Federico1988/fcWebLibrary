@@ -149,13 +149,18 @@ p {
     }
 
     @media screen and (max-width:500px) {
-        justify-content: center;
-
         img {
-
             width: 100%;
             margin: 2px;
-            align-self: center;
+        }
+    }
+
+    @media screen and (min-width:500px) and (max-width:1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        img {
+            width: 300px;
         }
     }
 }

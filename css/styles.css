@@ -133,13 +133,19 @@ p {
   display: inline-block;
 }
 @media screen and (max-width: 500px) {
-  .fotosPersonas {
-    justify-content: center;
-  }
   .fotosPersonas img {
     width: 100%;
     margin: 2px;
-    align-self: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  .fotosPersonas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .fotosPersonas img {
+    width: 300px;
   }
 }
 
