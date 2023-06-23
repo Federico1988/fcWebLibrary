@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Insertar archivo CSS -->
-    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="imgs/pianoIcon.jpg" type="image/x-icon">
     <!-- Google fonts, Source Sans Pro -->
@@ -21,16 +21,21 @@
         rel="stylesheet">
 </head>
 
-<body>    
+<body>
     <header class="fondoHeader">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <button class="navbar-toggler ms-auto headerFooterColor" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#n_bar" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+                <button id="menu-toggle" class="navbar-toggler ms-auto headerFooterColor" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#n_bar" aria-controls="navbarNavAltMarkup"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="n_bar">
                     <ul class="navbar-nav headerFooterColor">
+                        <button id="back-button" class="navbar-toggler ms-auto headerFooterColor" type="button"
+                            style="display: none;">
+                            >
+                        </button>
                         <li class="nav-item active"><a class="nav-link headerLinks" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link headerLinks" href="paginas/acercaDe.html">Acerca De</a></li>
                         <li class="nav-item"><a class="nav-link headerLinks" href="paginas/galeria.html">Galería</a></li>
@@ -54,6 +59,8 @@
         <p><a href="https://www.instagram.com/"><img src="./imgs/socialNetworks/instagram.png"></a></p>
     </footer>
 </body>
+<!-- Script para el boton "back" del menu hamburguesa -->
+<script src="../js/backNavButtonMobile.js"></script>
 <!-- Script JS de bootsrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
