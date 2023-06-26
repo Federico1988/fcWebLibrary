@@ -18,6 +18,12 @@ html {
   font-size: 100%;
 }
 
+.backgroundImg, .paisaje8, .paisaje7, .paisaje6, .paisaje5, .paisaje4, .paisaje3, .paisaje2, .paisaje1, header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 a {
   font-size: 2rem;
 }
@@ -38,9 +44,6 @@ body {
 
 header {
   background-image: url("../imgs/keyboardBkgnd.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   padding-top: 5%;
 }
 header ul {
@@ -81,12 +84,14 @@ header input[type=search] {
 }
 
 .floatingVideo {
+  border-radius: 12px;
+  width: 730px;
+  height: 410px;
+  margin: 10px;
+  box-shadow: 0 5px 20px var(--paynes-gray);
   position: fixed;
-  width: 727px;
-  height: 409px;
   bottom: 20px;
   left: 20px;
-  border-radius: 30px;
 }
 @media screen and (max-width: 500px) {
   .floatingVideo {
@@ -111,11 +116,6 @@ header input[type=search] {
 
 .formDiv {
   text-align: left;
-}
-
-.spotifyEmbedded iframe {
-  width: 20%;
-  margin: 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -172,50 +172,34 @@ p {
 }
 
 .paisaje1 {
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: all 0.3s;
 }
 
 .paisaje2 {
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: all 0.3s;
 }
 
 .paisaje3 {
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: all 0.3s;
 }
 
 .paisaje4 {
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: all 0.3s;
 }
 
 .paisaje5 {
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: all 0.3s;
 }
 
 .paisaje6 {
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: all 0.3s;
 }
 
 .paisaje7 {
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: all 0.3s;
 }
 
 .paisaje8 {
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: all 0.3s;
 }
 
@@ -331,8 +315,11 @@ footer p {
 }
 
 .aboutIframe {
+  border-radius: 12px;
   width: 100%;
   height: 320px;
+  margin: 10px;
+  box-shadow: 0 5px 20px var(--paynes-gray);
 }
 
 .spotifyIframe {
@@ -341,6 +328,11 @@ footer p {
   height: 352px;
   margin: 10px;
   box-shadow: 0 5px 20px var(--caramel);
+  /*     border-radius: 12px;
+  width: 20%;
+  height: 352px;
+  margin: 10px;
+  box-shadow: 0 5px 20px var(--caramel); */
 }
 @media screen and (max-width: 500px) {
   .spotifyIframe {
