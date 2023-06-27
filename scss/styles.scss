@@ -4,13 +4,13 @@
     padding: 0;
 }
 
-:root {
-    --alabaster: #f1f2ebff;
-    --chocolate-cosmos: #561d25ff;
-    --caramel: #ce8147ff;
-    --polynesian-blue: #094d92ff;
-    --paynes-gray: #536271ff;
-}
+/* Variables de colores */
+$alabaster: #f1f2ebff;
+$chocolate-cosmos: #561d25ff;
+$caramel: #ce8147ff;
+$polynesian-blue: #094d92ff;
+$paynes-gray: #536271ff;
+
 
 /* configuracion del html */
 html {
@@ -50,11 +50,11 @@ a {
 
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: var(--alabaster);
+    background-color: $alabaster;
 }
 
 .headerFooterColor {
-    background-color: var(--paynes-gray);
+    background-color: $paynes-gray;
 }
 
 header {
@@ -63,13 +63,17 @@ header {
     padding-top: 5%;
 
     ul {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: nowrap;
         width: 100%;
-        justify-content: space-around;
     }
 
     a {
+        text-align: center;
         &:hover {
-            background-color: var(--chocolate-cosmos);
+            background-color: $chocolate-cosmos;
         }
     }
 
@@ -86,8 +90,12 @@ header {
     }
 }
 
+.navbar-nav .nav-item {
+    flex: 1;
+}
+
 .headerLinks {
-    color: var(--alabaster);
+    color: $alabaster;
     font-weight: 500;
     font-size: larger;
     text-decoration: none;
@@ -105,7 +113,7 @@ header {
 
 .floatingVideo {
 
-    @include iframeShape(var(--paynes-gray), 730px, 410px);
+    @include iframeShape($paynes-gray, 730px, 410px);
     position: fixed;
     bottom: 20px;
     left: 20px;
@@ -118,7 +126,7 @@ header {
         top: 0px;
         left: 0px;
     }
-    
+
     @media screen and (min-width:500px) and (max-width:768px) {
         position: absolute;
         width: 40%;
@@ -175,7 +183,7 @@ p {
 .fotosLugares {
     padding: 20px;
     display: grid;
-    background-color: var(--caramel);
+    background-color: $caramel;
     grid-template-columns: repeat(3, 1fr) 2fr;
     grid-template-rows: repeat(4, 300px);
     grid-template-areas:
@@ -335,18 +343,13 @@ footer {
 
 .aboutIframe {
 
-    @include iframeShape(var(--paynes-gray), 100%, 320px);
+    @include iframeShape($paynes-gray, 100%, 320px);
 }
 
 .spotifyIframe {
 
 
-    @include iframeShape(var(--caramel), 20%, 352px);
-    /*     border-radius: 12px;
-    width: 20%;
-    height: 352px;
-    margin: 10px;
-    box-shadow: 0 5px 20px var(--caramel); */
+    @include iframeShape($caramel, 20%, 352px);
 
     @media screen and (max-width:500px) {
         height: 152px;
