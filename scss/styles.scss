@@ -18,13 +18,6 @@ html {
     font-size: 100%;
 }
 
-@mixin alignLeft {
-    text-align: left;
-}
-
-@mixin justifyText {
-    text-align: justify;
-}
 
 .backgroundImg {
     background-repeat: no-repeat;
@@ -41,7 +34,6 @@ html {
 
 a {
     font-size: 2rem;
-
     @media screen and (max-width:500px) {
         font-size: small;
     }
@@ -138,7 +130,7 @@ header {
 
 
 .formDiv {
-    @include alignLeft;
+    text-align: left;
 }
 
 h2 {
@@ -149,7 +141,7 @@ h2 {
 
 
 p {
-    @include justifyText;
+    text-align: justify;
     font-size: xx-large;
 }
 
@@ -220,19 +212,16 @@ p {
 .paisaje1 {
     grid-area: foto1;
     background-image: url("../imgs/lugares/img_5279.JPG");
-
 }
 
 .paisaje2 {
     grid-area: foto2;
     background-image: url("../imgs/lugares/img_5289.JPG");
-
 }
 
 .paisaje3 {
     grid-area: foto3;
     background-image: url("../imgs/lugares/img_5346.JPG");
-
 }
 
 .paisaje4 {
@@ -244,32 +233,25 @@ p {
 .paisaje5 {
     grid-area: foto5;
     background-image: url("../imgs/lugares/img_5504.JPG");
-
 }
 
 .paisaje6 {
     grid-area: foto6;
     background-image: url("../imgs/lugares/img_5291.JPG");
-
 }
 
 .paisaje7 {
     grid-area: foto7;
     background-image: url("../imgs/lugares/img_5423.JPG");
-
 }
 
 .paisaje8 {
     grid-area: foto8;
     background-image: url("../imgs/lugares/img_5365.JPG");
-
 }
 
 form {
-    margin: 50px;
     text-align: left;
-    max-width: 650px;
-
     input,
     textarea {
         padding: 5px;
@@ -286,7 +268,6 @@ form {
     padding: 5px;
     font-size: large;
     margin: 20px;
-
 }
 
 .contentRight {

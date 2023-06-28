@@ -246,9 +246,7 @@ p {
 }
 
 form {
-  margin: 50px;
   text-align: left;
-  max-width: 650px;
 }
 form input,
 form textarea {
