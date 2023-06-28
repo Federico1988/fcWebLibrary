@@ -36,7 +36,6 @@ html {
     border-radius: 12px;
     width: $width;
     height: $height;
-    margin: 10px;
     box-shadow: 0 5px 20px $color;
 }
 
@@ -342,14 +341,12 @@ footer {
 }
 
 .aboutIframe {
-
     @include iframeShape($paynes-gray, 100%, 320px);
 }
 
 .spotifyIframe {
-
-
     @include iframeShape($caramel, 20%, 352px);
+    margin: 0 0 10px 0;
 
     @media screen and (max-width:500px) {
         height: 152px;
@@ -359,6 +356,10 @@ footer {
     @media screen and (min-width:768px) and (max-width:1024px) {
         height: 352px;
         width: 30%;
+    }
+    
+    @media screen and (min-width:500px) {
+        margin: 10px;
     }
 }
 
