@@ -54,25 +54,39 @@
         <div class="formDiv container-fluid">
             <h1>Contactate conmigo</h1>
             <form action="">
-                <label class="formLabel" for="name">Ingresá tu nombre:</label>
-                <div class="input-group">
-                    <input type="text" name="name" id="name">
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="formLabel" for="name">Ingresá tu nombre:</label>
+                  <div class="input-group">
+                    <input type="text" name="name" id="name" class="form-control">
+                  </div>
                 </div>
-                <label class="formLabel" for="email">Ingresá tu email:</label>
-                <div class="input-group">
-                    <input type="email" placeholder="email@domain.com" required name="email" id="email">
+                <div class="col-md-12">
+                  <label class="formLabel" for="email">Ingresá tu email:</label>
+                  <div class="input-group">
+                    <input type="email" placeholder="email@domain.com" required name="email" id="email" class="form-control">
+                  </div>
                 </div>
-                <label class="formLabel" for="comments">Dejame tus comentarios:</label>
-                <div class="input-group">
-                    <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="formLabel" for="comments">Dejame tus comentarios:</label>
+                  <div class="input-group">
+                    <textarea name="comments" id="comments" cols="50" rows="10" class="form-control"></textarea>
+                  </div>
                 </div>
-                <div">
-                    <!-- Botones -->
-                    <input type="reset" value="Resetear">
-                    <input type="submit" value="Enviar formulario">
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="text-center">
+                    <input type="reset" value="Resetear" class="btn btn-secondary">
+                    <input type="submit" value="Enviar formulario" class="btn btn-primary">
+                  </div>
                 </div>
+              </div>
             </form>
-        </div>
+          </div>
+          
 
     </main>
 
