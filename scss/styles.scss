@@ -330,7 +330,12 @@ footer {
 }
 
 .aboutIframe {
-    @include iframeShape($paynes-gray, 100%, 320px);
+    margin-top: 50px;
+    @include iframeShape($paynes-gray, 100%, 520px);
+    @media screen and (max-width:768px){
+        margin-top: 20px;
+        height: 350px;
+    }
 }
 
 .spotifyIframe {
