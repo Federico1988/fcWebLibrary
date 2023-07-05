@@ -84,24 +84,30 @@ header input[type=search] {
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 768) {
+  #idxImage {
+    height: 500px;
+  }
+}
 
 .floatingVideo {
   border-radius: 12px;
-  width: 730px;
-  height: 410px;
+  width: 500px;
+  height: 350px;
   box-shadow: 0 5px 20px #536271;
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 100px;
+  left: 50px;
 }
 @media screen and (max-width: 500px) {
   .floatingVideo {
     position: relative;
     width: 100%;
-    height: 190px;
+    height: 350px;
     border-radius: 5px;
     top: 0px;
     left: 0px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 768px) {

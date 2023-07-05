@@ -101,22 +101,26 @@ header {
 #idxImage {
     width: 100%;
     height: auto;
+    @media screen and (max-width:768) {
+        height: 500px;
+    }
 }
 
 .floatingVideo {
 
-    @include iframeShape($paynes-gray, 730px, 410px);
+    @include iframeShape($paynes-gray, 500px, 350px);
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 100px;
+    left: 50px;
 
     @media screen and (max-width:500px) {
         position: relative;
         width: 100%;
-        height: 190px;
+        height: 350px;
         border-radius: 5px;
         top: 0px;
         left: 0px;
+        margin-bottom: 20px;
     }
 
     @media screen and (min-width:500px) and (max-width:768px) {
@@ -260,14 +264,12 @@ p {
 
 form {
     text-align: left;
-
     input,
     textarea {
         padding: 5px;
         font-size: large;
         margin: 20px;
     }
-
     margin-top: 30px;
 }
 
