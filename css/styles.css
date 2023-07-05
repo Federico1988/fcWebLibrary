@@ -11,6 +11,14 @@ html {
   font-size: 100%;
 }
 
+.bold {
+  font-weight: 600;
+}
+
+.italics {
+  font-style: italic;
+}
+
 .backgroundImg, .paisaje8, .paisaje7, .paisaje6, .paisaje5, .paisaje4, .paisaje3, .paisaje2, .paisaje1, header {
   background-repeat: no-repeat;
   background-position: center;
