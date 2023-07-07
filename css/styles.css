@@ -351,6 +351,7 @@ footer img {
 
 .spotifyIframe {
   z-index: 1;
+  position: relative;
   border-radius: 12px;
   width: 20%;
   height: 352px;
