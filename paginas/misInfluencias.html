@@ -58,16 +58,16 @@
             <div id="top">
                 <h1>Estos son los artistas que mas me influyen</h1>
                 <ul class="classlist">
-                    <li><a href="#tango">Tango</a></li>
-                    <li><a href="#rockNacional">Rock Nacional</a></li>
-                    <li><a href="#internacional">Música Internacional</a></li>
-                    <li><a href="#clasicos">Música Clásica</a></li>
+                    <li><a class="roundButton" href="#tango">Tango</a></li>
+                    <li><a class="roundButton" href="#rockNacional">Rock Nacional</a></li>
+                    <li><a class="roundButton" href="#internacional">Música Internacional</a></li>
+                    <li><a class="roundButton" href="#clasicos">Música Clásica</a></li>
                 </ul>
             </div>
             <div>
+                <div class="buttonUp"><a href="#top"><img src="../imgs/arrow.png" alt="Flecha hacia arriba"></a></div>
                 <div id="tango">
                     <h2>Tango</h2>
-
                     <div class="soptifyListItems container-fluid">
                         <iframe class="spotifyIframe" data-aos="flip-down"
                             src="https://open.spotify.com/embed/album/1VJbqdLlBZsGJUVWl69xg0?utm_source=generator&theme=0"
@@ -87,9 +87,6 @@
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                             loading="lazy"></iframe>
                     </div>
-                </div>
-                <div class="contentRight">
-                    <a href="#top">Volver arriba</a>
                 </div>
                 <div id="rockNacional">
                     <h2>Rock Nacional</h2>
@@ -125,9 +122,6 @@
                             loading="lazy"></iframe>
                     </div>
                 </div>
-                <div class="contentRight">
-                    <a href="#top">Volver arriba</a>
-                </div>
 
                 <div id="internacional">
                     <h2>Música Internacional</h2>
@@ -148,9 +142,6 @@
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                             loading="lazy"></iframe>
                     </div>
-                </div>
-                <div class="contentRight">
-                    <a href="#top">Volver arriba</a>
                 </div>
                 <div id="clasicos">
                     <h2>Música Clásica</h2>
@@ -177,9 +168,6 @@
                             loading="lazy"></iframe>
                     </div>
                 </div>
-                <div class="contentRight">
-                    <a href="#top">Volver arriba</a>
-                </div>
             </div>
         </div>
     </main>
@@ -194,6 +182,8 @@
     <script>
         AOS.init();    
     </script>
+    <!-- Hide Up Button depending on page position -->
+    <script src="../js/hideButton.js"></script>
     <!-- Script para el boton "back" del menu hamburguesa -->
     <script src="../js/backNavButtonMobile.js"></script>
     <!-- Script JS de bootsrap -->

@@ -291,9 +291,11 @@ form textarea {
 }
 
 .classlist {
-  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
-  list-style: disc;
+  list-style: none;
+  align-items: center;
 }
 @media screen and (max-width: 500px) {
   .classlist {
@@ -348,6 +350,7 @@ footer img {
 }
 
 .spotifyIframe {
+  z-index: 1;
   border-radius: 12px;
   width: 20%;
   height: 352px;
@@ -404,6 +407,55 @@ h1 {
 @media screen and (max-width: 500px) {
   h1 {
     font-size: large;
+  }
+}
+
+.roundButton {
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 5px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  color: #f1f2eb;
+  background-color: #094d92;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.roundButton:hover {
+  background-color: #ce8147;
+}
+.roundButton:active {
+  background-color: #561d25;
+}
+
+.buttonUp {
+  z-index: 9999;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  background-color: #f1f2eb;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  opacity: 0;
+  pointer-events: none;
+}
+.buttonUp a img {
+  width: 60px;
+  height: 60px;
+}
+.buttonUp.show {
+  opacity: 100;
+  pointer-events: all; /* Disable pointer events when hidden */
+}
+@media screen and (max-width: 768px) {
+  .buttonUp {
+    right: 10px;
   }
 }
 
