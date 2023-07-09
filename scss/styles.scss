@@ -26,13 +26,24 @@ html {
     font-style: italic;
 }
 
+.gigantFont{
+    font-size: 5rem;
+    @media screen and (max-width: 768px) {
+        font-size: 3rem;
+    }
+}
+.idxText .gigantFont {
+    line-height: 0.5; /* Adjust this value to reduce the interline height for the large font */
+  }
+
+
 .backgroundImg {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-@mixin iframeShape($color, $width, $height) {
+@mixin borderShape($color, $width, $height) {
     border-radius: 12px;
     width: $width;
     height: $height;
@@ -114,9 +125,25 @@ header {
     }
 }
 
-.floatingVideo {
+.idxText {
+    
+    @include borderShape($paynes-gray, 100%, 100%);
+    background-color: $alabaster;
+    width: 60%;
+    text-align: justify;
+    font-size: x-large;
+    padding: 30px;
+    margin: 40px 0px 50px 20px;
+    line-height: 1.5;
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        font-size: medium;
+    }
+}
 
-    @include iframeShape($paynes-gray, 500px, 350px);
+/* 
+.floatingText {
+
     position: fixed;
     bottom: 100px;
     left: 50px;
@@ -139,7 +166,7 @@ header {
         top: 140px;
         left: 20px;
     }
-}
+} */
 
 
 .formDiv {
@@ -358,7 +385,7 @@ footer {
 
 .aboutIframe {
     margin-top: 50px;
-    @include iframeShape($paynes-gray, 100%, 520px);
+    @include borderShape($paynes-gray, 100%, 520px);
 
     @media screen and (max-width:768px) {
         margin-top: 20px;
@@ -369,7 +396,7 @@ footer {
 .spotifyIframe {
     z-index: 1;
     position: relative;
-    @include iframeShape($caramel, 20%, 352px);
+    @include borderShape($caramel, 20%, 352px);
     margin: 0 0 10px 0;
 
     @media screen and (max-width:500px) {

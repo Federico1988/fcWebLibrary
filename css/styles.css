@@ -19,6 +19,19 @@ html {
   font-style: italic;
 }
 
+.gigantFont {
+  font-size: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .gigantFont {
+    font-size: 3rem;
+  }
+}
+
+.idxText .gigantFont {
+  line-height: 0.5; /* Adjust this value to reduce the interline height for the large font */
+}
+
 .backgroundImg, .paisaje8, .paisaje7, .paisaje6, .paisaje5, .paisaje4, .paisaje3, .paisaje2, .paisaje1, header {
   background-repeat: no-repeat;
   background-position: center;
@@ -98,37 +111,52 @@ header input[type=search] {
   }
 }
 
-.floatingVideo {
+.idxText {
   border-radius: 12px;
-  width: 500px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   box-shadow: 0 5px 20px #536271;
-  position: fixed;
-  bottom: 100px;
-  left: 50px;
+  background-color: #f1f2eb;
+  width: 60%;
+  text-align: justify;
+  font-size: x-large;
+  padding: 30px;
+  margin: 40px 0px 50px 20px;
+  line-height: 1.5;
 }
-@media screen and (max-width: 500px) {
-  .floatingVideo {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    border-radius: 5px;
-    top: 0px;
-    left: 0px;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 500px) and (max-width: 768px) {
-  .floatingVideo {
-    position: absolute;
-    width: 40%;
-    height: 200px;
-    border-radius: 20px;
-    top: 140px;
-    left: 20px;
+@media screen and (max-width: 768px) {
+  .idxText {
+    width: 90%;
+    font-size: medium;
   }
 }
 
+/* 
+.floatingText {
+
+    position: fixed;
+    bottom: 100px;
+    left: 50px;
+
+    @media screen and (max-width:500px) {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        border-radius: 5px;
+        top: 0px;
+        left: 0px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width:500px) and (max-width:768px) {
+        position: absolute;
+        width: 40%;
+        height: 200px;
+        border-radius: 20px;
+        top: 140px;
+        left: 20px;
+    }
+} */
 .formDiv {
   text-align: left;
 }
