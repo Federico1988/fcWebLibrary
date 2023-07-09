@@ -29,7 +29,8 @@ html {
 }
 
 .idxText .gigantFont {
-  line-height: 0.5; /* Adjust this value to reduce the interline height for the large font */
+  line-height: 0.5;
+  /* Adjust this value to reduce the interline height for the large font */
 }
 
 .backgroundImg, .paisaje8, .paisaje7, .paisaje6, .paisaje5, .paisaje4, .paisaje3, .paisaje2, .paisaje1, header {
@@ -104,6 +105,7 @@ header input[type=search] {
 #idxImage {
   width: 100%;
   height: auto;
+  margin-top: 30px;
 }
 @media screen and (max-width: 768) {
   #idxImage {
@@ -116,8 +118,9 @@ header input[type=search] {
   width: 100%;
   height: 100%;
   box-shadow: 0 5px 20px #536271;
-  background-color: #f1f2eb;
-  width: 60%;
+  height: auto;
+  background-color: rgba(241, 242, 235, 0.9);
+  width: 40%;
   text-align: justify;
   font-size: x-large;
   padding: 30px;
@@ -128,6 +131,13 @@ header input[type=search] {
   .idxText {
     width: 90%;
     font-size: medium;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .idxText {
+    position: fixed;
+    bottom: 80px;
+    left: 50px;
   }
 }
 
@@ -167,6 +177,9 @@ header input[type=search] {
   }
 }
 
+h2 {
+  margin-top: 30px;
+}
 @media screen and (max-width: 500px) {
   h2 {
     font-size: medium;
@@ -321,7 +334,7 @@ form textarea {
 .classlist {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin: 30px 0px 30px 0px;
   list-style: none;
   align-items: center;
   display: flex;
@@ -441,7 +454,7 @@ p {
 }
 
 h1 {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 @media screen and (max-width: 500px) {
   h1 {
