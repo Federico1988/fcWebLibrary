@@ -192,15 +192,10 @@ header {
 
 h2 {
     margin-top: 30px;
+
     @media screen and (max-width:500px) {
         font-size: medium;
     }
-}
-
-
-p {
-    text-align: justify;
-    font-size: xx-large;
 }
 
 .fotosPersonas {
@@ -348,7 +343,6 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 
     a {
         font-size: 1.6rem;
@@ -362,9 +356,14 @@ form {
             font-size: small;
         }
     }
+    @media screen and (max-width:768px) {
+        padding:0px;
+        justify-content: center;
+    }
 }
 
 footer {
+    margin-top: 50px;
     padding-bottom: 10px;
     display: flex;
     justify-content: flex-end;
@@ -397,7 +396,7 @@ footer {
 }
 
 .aboutIframe {
-    margin-top: 50px;
+    margin: 30px 0px 30px 0px;
     @include borderShape($paynes-gray, 100%, 520px);
 
     @media screen and (max-width:768px) {
@@ -439,7 +438,8 @@ footer {
 }
 
 p {
-    font-size: medium;
+    text-align: justify;
+    font-size: x-large;
 
     @media screen and (max-width:500px) {
         font-size: smaller;
@@ -452,7 +452,7 @@ p {
 
 
 h1 {
-    margin-top: 30px;
+    margin: 20px 0px 20px 0px;
 
     @media screen and (max-width:500px) {
         font-size: large;
@@ -475,6 +475,12 @@ h1 {
     &:hover {
         background-color: rgba($chocolate-cosmos, 0.2);
         font-weight: 500;
+    }
+
+    @media screen and (max-width:768px) {
+        width: 300px;
+
+
     }
 
 }
