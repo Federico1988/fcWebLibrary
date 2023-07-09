@@ -18,12 +18,14 @@ html {
     font-size: 100%;
 }
 
-.bold{
+.bold {
     font-weight: 600;
 }
-.italics{
+
+.italics {
     font-style: italic;
 }
+
 .backgroundImg {
     background-repeat: no-repeat;
     background-position: center;
@@ -106,6 +108,7 @@ header {
 #idxImage {
     width: 100%;
     height: auto;
+
     @media screen and (max-width:768) {
         height: 500px;
     }
@@ -269,12 +272,14 @@ p {
 
 form {
     text-align: left;
+
     input,
     textarea {
         padding: 5px;
         font-size: large;
         margin: 20px;
     }
+
     margin-top: 30px;
 }
 
@@ -297,12 +302,25 @@ form {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
-    list-style:none;
+    list-style: none;
     align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    a {
+        font-size: 1.6rem;
+    }
 
     @media screen and (max-width:500px) {
         margin-left: 10px;
         margin-bottom: 10px;
+
+        a {
+            font-size: small;
+        }
     }
 }
 
@@ -341,7 +359,8 @@ footer {
 .aboutIframe {
     margin-top: 50px;
     @include iframeShape($paynes-gray, 100%, 520px);
-    @media screen and (max-width:768px){
+
+    @media screen and (max-width:768px) {
         margin-top: 20px;
         height: 350px;
     }
@@ -394,57 +413,70 @@ p {
 
 h1 {
     margin-top: 10px;
+
     @media screen and (max-width:500px) {
         font-size: large;
     }
 }
+
 .roundButton {
     display: inline-block;
-    padding: 2px 20px;
+    padding: 5px;
     margin: 5px;
-    border-radius: 25px;
+    width: 350px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 400;
     text-align: center;
-    color: $alabaster;
-    background-color: $polynesian-blue;
-    border: none;   
+    color: black;
+    border: 1px solid $paynes-gray;
     transition: background-color 0.3s ease;
-  
+
     &:hover {
-      background-color: $caramel;
+        background-color: rgba($chocolate-cosmos, 0.2);
+        font-weight: 500;
     }
-  
-    &:active {
-      background-color: $chocolate-cosmos;
-    }
-  }
-  .buttonUp{
+
+}
+
+.buttonUp {
     z-index: 9999;
     position: fixed;
     bottom: 100px;
     right: 50px;
     background-color: $alabaster;
-    width: 80px;
-    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 80px;
     opacity: 0;
     pointer-events: none;
-    a{
-        img{
-            width: 60px;
-            height: 60px;
+    width: 110px;
+    height: 110px;
+
+    a {
+        img {
+            width: 100px;
+            height: 100px;
         }
     }
+
     &.show {
         opacity: 100;
-        pointer-events: all; /* Disable pointer events when hidden */
-      }
-      @media screen and (max-width:768px) {
-        right: 10px;
-                
-      }
+        pointer-events: all;
+        /* Disable pointer events when hidden */
     }
+
+    @media screen and (max-width:768px) {
+        right: 10px;
+        width: 80px;
+        height: 80px;
+
+        a {
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}

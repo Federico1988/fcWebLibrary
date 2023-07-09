@@ -296,11 +296,21 @@ form textarea {
   margin-bottom: 30px;
   list-style: none;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.classlist a {
+  font-size: 1.6rem;
 }
 @media screen and (max-width: 500px) {
   .classlist {
     margin-left: 10px;
     margin-bottom: 10px;
+  }
+  .classlist a {
+    font-size: small;
   }
 }
 
@@ -413,22 +423,20 @@ h1 {
 
 .roundButton {
   display: inline-block;
-  padding: 2px 20px;
+  padding: 5px;
   margin: 5px;
-  border-radius: 25px;
+  width: 350px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 400;
   text-align: center;
-  color: #f1f2eb;
-  background-color: #094d92;
-  border: none;
+  color: black;
+  border: 1px solid #536271;
   transition: background-color 0.3s ease;
 }
 .roundButton:hover {
-  background-color: #ce8147;
-}
-.roundButton:active {
-  background-color: #561d25;
+  background-color: rgba(86, 29, 37, 0.2);
+  font-weight: 500;
 }
 
 .buttonUp {
@@ -437,26 +445,33 @@ h1 {
   bottom: 100px;
   right: 50px;
   background-color: #f1f2eb;
-  width: 80px;
-  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 80px;
   opacity: 0;
   pointer-events: none;
+  width: 110px;
+  height: 110px;
 }
 .buttonUp a img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 .buttonUp.show {
   opacity: 100;
-  pointer-events: all; /* Disable pointer events when hidden */
+  pointer-events: all;
+  /* Disable pointer events when hidden */
 }
 @media screen and (max-width: 768px) {
   .buttonUp {
     right: 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .buttonUp a img {
+    width: 60px;
+    height: 60px;
   }
 }
 
