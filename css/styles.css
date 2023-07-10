@@ -191,6 +191,7 @@ h2 {
 }
 
 .fotosLugares {
+  padding: 20px;
   display: grid;
   background-color: #ce8147;
   grid-template-columns: repeat(3, 1fr) 2fr;
