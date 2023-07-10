@@ -127,7 +127,7 @@ header input[type=search] {
   background-color: rgba(241, 242, 235, 0.9);
   width: 40%;
   text-align: justify;
-  font-size: x-large;
+  font-size: large;
   padding: 30px;
   margin: 40px 0px 50px 20px;
   line-height: 1.5;
@@ -141,7 +141,7 @@ header input[type=search] {
 @media screen and (min-width: 1024px) {
   .idxText {
     position: fixed;
-    bottom: 80px;
+    bottom: 20px;
     left: 50px;
   }
 }
