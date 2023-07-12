@@ -21,16 +21,12 @@ html {
 
 .gigantFont {
   font-size: 5rem;
+  /* Adjust this value to reduce the interline height for the large font */
 }
 @media screen and (max-width: 768px) {
   .gigantFont {
     font-size: 3rem;
   }
-}
-
-.idxText .gigantFont {
-  line-height: 0.5;
-  /* Adjust this value to reduce the interline height for the large font */
 }
 
 .backgroundImg, .paisaje8, .paisaje7, .paisaje6, .paisaje5, .paisaje4, .paisaje3, .paisaje2, .paisaje1, header {

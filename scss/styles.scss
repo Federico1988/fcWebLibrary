@@ -28,17 +28,12 @@ html {
 
 .gigantFont {
     font-size: 5rem;
+    /* Adjust this value to reduce the interline height for the large font */
 
     @media screen and (max-width: 768px) {
         font-size: 3rem;
     }
 }
-
-.idxText .gigantFont {
-    line-height: 0.5;
-    /* Adjust this value to reduce the interline height for the large font */
-}
-
 
 .backgroundImg {
     background-repeat: no-repeat;
