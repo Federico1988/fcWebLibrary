@@ -306,6 +306,10 @@ form textarea {
   text-align: right;
 }
 
+.sign {
+  text-align: right;
+}
+
 .classlist {
   display: flex;
   flex-wrap: wrap;
