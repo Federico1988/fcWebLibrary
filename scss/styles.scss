@@ -128,10 +128,8 @@ header {
 
 .idxText {
 
-    @include borderShape($paynes-gray, 100%, 100%);
-    height: auto;
+    @include borderShape($paynes-gray, 40%, auto);
     background-color: rgba($alabaster, 0.9);
-    width: 40%;
     text-align: justify;
     font-size: large;
     padding: 30px;
