@@ -21,6 +21,7 @@ html {
 
 .gigantFont {
   font-size: 5rem;
+  line-height: 0.5;
   /* Adjust this value to reduce the interline height for the large font */
 }
 @media screen and (max-width: 768px) {
